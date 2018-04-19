@@ -2813,7 +2813,7 @@
 			z-index: 10001;
 		}
 
-	#menu {
+	#menu {/*<&> Open menu settings -> MOBILE <- <&>*/
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
@@ -2823,7 +2823,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #005F55;	/*<&> Backgound color <&>*/
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -2833,7 +2833,7 @@
 		right: 0;
 		top: 0;
 		width: 20em;
-		z-index: 10002;
+		/*z-index: 10002;*/
 	}
 
 		#menu ul {
@@ -2931,7 +2931,7 @@
 				}
 
 				#header header > p {
-					font-size: 1em;
+					font-size: 1em;/*<&> Subtitle font size <&>*/
 				}
 
 				#header h1 {
