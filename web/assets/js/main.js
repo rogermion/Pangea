@@ -76,6 +76,7 @@
 
 				var a;
 			
+				setInterval(function(){ $('#nav> ul').css( 'border' , 'none' ) ; }, 1000);
 				if ($(window).width() <= 760) {  
               		a = 
 		              	'<ul>'	+
