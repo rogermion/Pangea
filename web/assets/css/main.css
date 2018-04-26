@@ -2096,7 +2096,7 @@
 
 	#header {
 		position: relative;
-		/*background-image: url("../../images/pangea.logo.final.jpg");*/
+		background-image: url("../../images/pangea.logo.final.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2172,7 +2172,7 @@
 	}
 
 		body.homepage #header h1 {
-			font-size: 7em;		/*<&> Logo font size <&>*/
+			font-size: 6em;		/*<&> Logo font size <&>*/
 		}
 
 		body.homepage #header:after {	/*<&> Animation settings <&>*/
