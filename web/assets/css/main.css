@@ -1555,7 +1555,7 @@
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Avenir Next', sans-serif;
 		font-weight: 300;
 	}
 
@@ -1573,7 +1573,7 @@
 	input, textarea, select {
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Avenir Next', sans-serif;
 		font-weight: 300;
 	}
 
@@ -1654,6 +1654,8 @@
 
 	p {
 		text-align: justify;
+		margin-left: 0em;
+		margin-right: 0em;/*<&> container special margin <&>*/
 	}
 
 	br.clear {
@@ -1719,7 +1721,7 @@
 		header > p {
 			display: block;
 			font-size: 1.5em;
-			margin: 1em 0 2em 0;
+			margin: 1em 1em 2em 1em;/*<&>container special margin*/
 			line-height: 1.5em;
 			text-align: inherit;
 		}
@@ -2096,7 +2098,7 @@
 
 	#header {
 		position: relative;
-		background-image: url("../../images/pangea.logo.final.jpg");
+		background-image: url("vid.mp4");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -3005,4 +3007,8 @@
 						margin-bottom: 2em;
 					}
 
+	}
+	.roger {
+		margin-left: 5em;
+		margin-right: 5em;/*<&>container special magin*/
 	}
