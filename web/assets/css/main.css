@@ -1591,6 +1591,7 @@
 
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 		font-weight: 600;
+		letter-spacing: 0.2em;
 	}
 
 	h2 {
@@ -1669,8 +1670,8 @@
 		top: 4.5em;
 		margin-bottom: 9em;
 		height: 6px;
-		border-top: solid 1px rgba(128, 128, 128, 0.2);
-		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+		/*border-top: solid 1px rgba(128, 128, 128, 0.2);*/
+		/*border-bottom: solid 1px rgba(128, 128, 128, 0.2);*/
 	}
 
 		hr:before, hr:after {
@@ -1680,7 +1681,7 @@
 			display: block;
 			width: 1px;
 			height: 21px;
-			background: rgba(128, 128, 128, 0.2);
+			/*background: rgba(128, 128, 128, 0.2);*/
 		}
 
 		hr:before {
@@ -2098,11 +2099,11 @@
 
 	#header {
 		position: relative;
-		background-image: url("vid.mp4");
+		/*background-image: url("../../images/pangea.logo.final.jpg");*/
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #101B19; /*<&> Menu color <&>*/
+		color: #fff; /*<&> Menu color <&>*/
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2115,6 +2116,14 @@
 			height: 100%;
 		}
 
+		#header .video {
+			position: fixed;
+			z-index: -1;
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
 		#header .inner {
 			position: relative;
 			z-index: 1;
@@ -2133,16 +2142,19 @@
 			}
 
 		#header h1 {
-			color: #101B19;	/*<&> Logo font color <&>*/
+			color: #fff;	/*<&> Logo font color <&>*/
 			font-size: 3em;
 			line-height: 1em;
 		}
+			#header h1 strong{
+			color: #fff;	/*<&> Logo font color <&>*/
+			}
 
 			#header h1 a {
 				color: inherit;
 			}
 
-		#header .button {
+/*		#header .button {
 			display: inline-block;
 			border-radius: 100%;
 			width: 4.5em;
@@ -2151,13 +2163,13 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
-		}
+		}*/
 
 		#header hr {
 			top: 1.5em;
 			margin-bottom: 3em;
 			border-bottom-color: rgba(192, 192, 192, 0.35);
-			box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);
+			/*box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);*/
 		}
 
 			#header hr:before, #header hr:after {
@@ -2165,7 +2177,7 @@
 			}
 
 		#header footer {
-			margin: 1em 0 0 0;
+			margin: 1em 0 0em 0;
 		}
 
 	body.homepage #header {
@@ -2220,8 +2232,8 @@
 			display: inline-block;
 			margin: 0;
 			height: 21px;
-			border-left: solid 1px rgba(192, 192, 192, 0.35);	/*<&> Color of the menu box <&>*/
-			border-right: solid 1px rgba(192, 192, 192, 0.35);	/*<&> ======| MENU |======  <&>*/
+			/*border-left: solid 1px rgba(192, 192, 192, 0.35);*/	/*<&> Color of the menu box <&>*/
+			/*border-right: solid 1px rgba(192, 192, 192, 0.35);*/	/*<&> ======| MENU |======  <&>*/
 		}
 
 			#nav > ul:before, #nav > ul:after {
@@ -2232,8 +2244,8 @@
 				top: 50%;
 				margin-top: -2px;
 				height: 5px;
-				border-top: solid 1px rgba(192, 192, 192, 0.35);	/*<&> Color of the menu box <&>*/
-				border-bottom: solid 1px rgba(192, 192, 192, 0.35);	/*<&> ======| MENU |======  <&>*/
+				/*border-top: solid 1px rgba(192, 192, 192, 0.35);*/	/*<&> Color of the menu box <&>*/
+				/*border-bottom: solid 1px rgba(192, 192, 192, 0.35);*/	/*<&> ======| MENU |======  <&>*/
 			}
 
 			#nav > ul:before {
@@ -2329,13 +2341,20 @@
 
 	#banner {
 		background: #fff;
-		text-align: center;
+		text-align: justify;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
 	}
+		#banner header > h2 {
+			text-align: right;
+			margin-right: 2.6em;
+			color: #000;
+		}
 
 		#banner header > p {
 			margin-bottom: 0;
+			margin-left: 5em;
+			margin-right: 5em;
 		}
 
 /* Content */
@@ -3012,3 +3031,12 @@
 		margin-left: 5em;
 		margin-right: 5em;/*<&>container special magin*/
 	}
+
+	/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
