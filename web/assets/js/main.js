@@ -78,6 +78,11 @@
 			
 				setInterval(function(){ $('#nav> ul').css( 'border' , 'none' ) ; }, 1000);
 				if ($(window).width() <= 760) {  
+					document.getElementById("title-banner").style.margin="0";
+					document.getElementById("p-banner").style.margin="0";
+					document.getElementById("title-main").style.margin="0";
+					document.getElementById("p-main").style.margin="0";
+
               		a = 
 		              	'<ul>'	+
 							'<li class="special">'	+
@@ -139,6 +144,8 @@
 				// 		'</video>'
     //    				$('#mainvideo').append(b);
     //    			};
+
+
 
 
 //------------------------------- ROGER -----------------------------//

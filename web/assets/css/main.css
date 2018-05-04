@@ -2347,6 +2347,7 @@
 		#banner header > h2 {
 			text-align: right;
 			margin-right: 2.6em;
+			padding-bottom: 1em;
 			color: #000;
 		}
 
@@ -2390,6 +2391,16 @@
 
 		#main section:first-of-type {
 			padding-top: 2em;
+		}
+
+			#main header h2 {
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+
+		#main p {
+			margin-left: 5em;
+			margin-right: 5em;
 		}
 
 /* Footer */
@@ -2557,6 +2568,26 @@
 			.carousel article p {
 				text-align: center;
 			}
+
+/* Braços */
+
+#title{
+	padding-bottom: 1em;
+}
+
+#features .row a {
+	margin-bottom: 0;
+}
+
+#features .row header h2 {
+	padding-top: 0.5em;
+	padding-bottom: 0em;
+}
+
+#features .row p {
+	margin-right: 3em;
+	margin-left: 3em;
+}
 
 /* Wide */
 
@@ -3027,11 +3058,6 @@
 					}
 
 	}
-	.roger {
-		margin-left: 5em;
-		margin-right: 5em;/*<&>container special magin*/
-	}
-
 
 /* Videos */
 video {
