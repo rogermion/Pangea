@@ -84,10 +84,11 @@
 								'<a href="#menu" class="menuToggle"><span>Menu</span></a> ' +
 								'<div id="menu">' +
 									'<ul>'+
-										'<li><a href="index.html">Home</a></li>'+
-										'<li><a href="generic.html">Generic</a></li>'+									'<li><a href="elements.html">Elements</a></li>'+
-										'<li><a href="#">Sign Up</a></li>'+
-										'<li><a href="#">Log In</a></li>'+
+										'<li><a href="index.html">NÓS</a></li>'+
+										'<li><a href="#main">VIDEO</a></li>'+
+										'<li><a href="#carousel">PORTFÓLIO</a></li>'+
+										'<li><a href="#features">BRAÇOS</a></li>'+
+										'<li><a href="#footer">CONTATO</a></li>'+
 									'</ul>'+
 								'</div>' +
 							 '</li>' +
@@ -96,10 +97,11 @@
        			} else {
    					a = 
    						'<ul>'+
-							'<li><a href="index.html">Home</a></li>'+
-							'<li><a href="generic.html">Generic</a></li>'+									'<li><a href="elements.html">Elements</a></li>'+
-							'<li><a href="#">Sign Up</a></li>'+
-							'<li><a href="#">Log In</a></li>'+
+							'<li><a href="index.html">NÓS</a></li>'+
+							'<li><a href="#main">VIDEO</a></li>'+
+							'<li><a href="#carousel">PORTFÓLIO</a></li>'+
+							'<li><a href="#features">BRAÇOS</a></li>'+
+							'<li><a href="#footer">CONTATO</a></li>'+
 						'</ul>';
        				$('#nav').append(a);
        			};
@@ -118,6 +120,27 @@
 					target: $body,
 					visibleClass: 'is-menu-visible'
 				});
+
+
+				// var b;
+
+				// if ($(window).width() <= 760) {  
+    //           		b = 
+		  //             	'<video width="760" height="570" controls>' +
+				// 		  '<source src="images/vid2.mp4" type="video/mp4">' +
+				// 			'Your browser does not support the video tag.' +
+				// 		'</video>'
+				// 	$('#mainvideo').append(b);				
+    //    			} else {
+   	// 				b = 
+   	// 					'<video width="1140" height="855" controls>' +
+				// 		  '<source src="images/vid2.mp4" type="video/mp4">' +
+				// 			'Your browser does not support the video tag.' +
+				// 		'</video>'
+    //    				$('#mainvideo').append(b);
+    //    			};
+
+
 //------------------------------- ROGER -----------------------------//
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
