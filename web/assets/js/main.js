@@ -73,15 +73,21 @@
 			// 	'</div>'
 			// )
 			// 	.appendTo($body);
+				if ($(window).width() <= $(window).height()) {
+					document.getElementById("myVideo").style.width="250%";
+				}
+
+
 
 				var a;
 			
 				setInterval(function(){ $('#nav> ul').css( 'border' , 'none' ) ; }, 1000);
-				if ($(window).width() <= 760) {  
+				if ($(window).width() <= 736) {  
 					document.getElementById("title-banner").style.margin="0";
 					document.getElementById("p-banner").style.margin="0";
 					document.getElementById("title-main").style.margin="0";
 					document.getElementById("p-main").style.margin="0";
+					document.getElementById("myVideo").style.width="200%";
 
               		a = 
 		              	'<ul>'	+
